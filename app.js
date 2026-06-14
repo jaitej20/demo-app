@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-    res.send("Testing Git-Hub Actions-New Code Deployment Successful");
+    res.send("Successfully deployed the app through github actions");
 });
 
 app.listen(3000, () => {
