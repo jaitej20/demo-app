@@ -27,6 +27,7 @@ jobs:
             --document-name "AWS-RunShellScript" \
             --parameters 'commands=[
               "cd /home/ec2-user/demo-app",
+              git config --global --add safe.directory /home/ec2-user/demo-app,
               "git pull origin main",
               "npm install",
               "pm2 restart all"
